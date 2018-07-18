@@ -2,13 +2,13 @@
 
 ## 教材
 * Oscillation（減衰振動）
- * Kalman Filterによるデータ同化
- * Ensemble Kalman Filter によるデータ同化
- * 4次元変分法によるデータ同化
+  * Kalman Filterによるデータ同化
+  * Ensemble Kalman Filter によるデータ同化
+  * 4次元変分法によるデータ同化
 * Lorenz 63 model 
- * Kalman Filterによるデータ同化
- * Ensemble Kalman Filter によるデータ同化
- * 4次元変分法によるデータ同化
+  * Kalman Filterによるデータ同化
+  * Ensemble Kalman Filter によるデータ同化
+  * 4次元変分法によるデータ同化
 
 ## 環境構築
 #### 必要な環境
