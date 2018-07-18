@@ -9,11 +9,13 @@
 * jupyterlab or jupyternotebook
 
 #### 構築方法
-すでにPython3.xが入っている環境をお持ちの場合
+__すでにPython3.xが入っている環境をお持ちの場合__  
 ```
 pip install numpy
 pip install matplotlib
 pip install jupyterlab
 ```
 
-Pythonの環境を持っていない場合
+__Pythonの環境を持っていない場合__  
+→この場合は、Anacondaを導入するのが環境構築に悩まなくて済みます(WindowsおよびMac, Linuxにおいても）  
+※「Anaconda」とは、Pythonで必要そうなライブラリが詰め込まれたパッケージです。
