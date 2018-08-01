@@ -2,21 +2,29 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class Visualization():
-    def __init__(self,obs, true, sim, da, name,xlim):
+    def __init__(self,obs, true, sim, da, interval, nt_asm, name,xlim):
         self.obs = obs
         self.true = true
         self.sim = sim
         self.da = da
+        self.interval = interval
+        self.nt_asm = nt_asm
         self.name = name
         self.xlim = xlim
 
     def fit(self):
         fig = plt.figure(figsize=(12, 3)) # figureオブジェクト作成
-        #plt.subplot(1,2,1)
-        plt.plot(self.obs,color='red',label='Obs.')
-        plt.plot(self.true,color='green',label='True')
-        plt.plot(self.sim,color='blue',label='Sim.')
-        plt.plot(self.da,color='purple',label='DA')
+        _xrange = range(len(self.true))
+
+        if(self.obs != None):
+            _xrange2 = range(0,self.nt_asm,self.interval)
+            _xobs2 = []
+            for i in range(0,self.nt_asm,self.interval):
+                _xobs2.append(self.obs[i])
+            plt.scatter(_xrange2,_xobs2,color='red',label='Obs.')
+        plt.plot(_xrange,self.true,color='green',label='True')
+        plt.plot(_xrange,self.sim,color='blue',label='Sim.')
+        plt.plot(_xrange,self.da,color='purple',label='DA')
         plt.xlabel("Time Step",size=12)
         plt.ylabel(self.name,size=12)
         plt.xlim(0,self.xlim)
