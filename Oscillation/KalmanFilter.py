@@ -1,6 +1,6 @@
 import numpy as np
 
-class KalmanGain:
+class KalmanFilter:
     def __init__(self,x, v, noise,Pf, H, xobs,vobs):
         self.x = x
         self.v = v
