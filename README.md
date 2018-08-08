@@ -7,8 +7,8 @@
   * [4次元変分法によるデータ同化](https://github.com/rkikurin/DataAssimilation_tutorials/blob/master/Oscillation/Oscillation_4DVAR.ipynb)
 * Lorenz 63 model 
   * [Kalman Filterによるデータ同化](https://github.com/rkikurin/DataAssimilation_tutorials/blob/master/Lorenz63/Lorenz63_KF.ipynb)
-  * Ensemble Kalman Filter によるデータ同化
-  * 4次元変分法によるデータ同化
+  * [Ensemble Kalman Filter によるデータ同化](https://github.com/rkikurin/DataAssimilation_tutorials/blob/master/Lorenz63/Lorenz63_EnKF.ipynb)
+  * [4次元変分法によるデータ同化](https://github.com/rkikurin/DataAssimilation_tutorials/blob/master/Lorenz63/Lorenz63_4DVAR.ipynb)
 
 ## 環境構築
 #### 必要な環境
