@@ -20,7 +20,7 @@ class KalmanFilter:
         #Kalman gain
         _inv = np.dot(np.dot(self.H, self.Pf), self.H.T)
         for i in range(_inv.shape[0]):
-            _inv[i,i] = _inv[i,i] + self.noise
+            _inv[i,i] = _inv[i,i] + self.noise * self.noise
         _inv = np.linalg.inv(_inv)
         _Kg = np.dot(np.dot(self.Pf, self.H.T), _inv)
 
