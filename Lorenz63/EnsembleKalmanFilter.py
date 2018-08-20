@@ -32,10 +32,10 @@ class EnsembleKalmanFilter:
 
         if(self.H.shape[0] != 1):
             for i in range(self.H.shape[0]):
-                inv2[i,i]=inv2[i,i] + self.noise
+                inv2[i,i]=inv2[i,i] + self.noise * self.noise
             invKG = np.linalg.inv(inv2)
         else:
-            inv2 = inv2 + self.noise
+            inv2 = inv2 + self.noise * self.noise
             invKG = 1.0/inv2
         invBef = np.dot(covariance,self.H.T)
         KG = np.dot(invBef,invKG)
