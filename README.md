@@ -1,6 +1,6 @@
 # DataAssimilation_tutorials
 
-## 教材
+## 教材 
 * Oscillation（減衰振動）
   * [Kalman Filterによるデータ同化](https://github.com/rkikurin/DataAssimilation_tutorials/blob/master/Oscillation/Oscillation_KF.ipynb)
   * [Ensemble Kalman Filterによるデータ同化](https://github.com/rkikurin/DataAssimilation_tutorials/blob/master/Oscillation/Oscillation_EnKF.ipynb)
